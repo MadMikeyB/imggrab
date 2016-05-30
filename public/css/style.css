@@ -1,0 +1,67 @@
+.gallery {
+  width: 100%;
+}
+
+.placeholder {
+  width: 100%;
+  float: left;
+  background-image: url('img/loader.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.placeholder img {
+  width: 100vw;
+  height: 75vh;
+}
+
+.gallery-images {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 33.333%;
+  min-height: 190px;
+  float: left;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-controls i {
+  cursor: pointer;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-controls i:hover {
+  color: #777;
+}
+
+#gallery-prev {
+  position:absolute;
+  left:0%;
+  top: 50%;			
+}
+
+#gallery-next {
+  position:absolute;
+  right:0%;
+  top: 50%;			
+}
+
+@media all and (max-width: 768px) {
+  .image img {
+    width: 48%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .image img {
+    width: 98%;
+  }
+}
