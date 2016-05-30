@@ -26,7 +26,7 @@
 
 .image img {
   width: 33.333%;
-  min-height: 190px;
+  /*min-height: 190px;*/
   float: left;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
