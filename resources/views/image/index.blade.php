@@ -4,7 +4,7 @@
 	<div class="gallery">
 		<div class="placeholder" id="featured">
 			<a href="">
-				<img src="" class="img-responsive" data-id="0" data-featured="1">
+				<img src="/images/{{ $featured->image_id }}" class="img-responsive" data-id="{{ $featured->id }}" data-featured="1">
 			</a>
 			
 			<div class="gallery-controls">

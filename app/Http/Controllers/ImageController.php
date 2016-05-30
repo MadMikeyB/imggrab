@@ -19,8 +19,9 @@ class ImageController extends Controller
      */
     public function index()
     {
+        $featured = Image::orderByRaw('RAND()')->first();
     	$images = Image::orderBy('id', 'DESC')->paginate('30');
-        return view('image.index', compact('images'));
+        return view('image.index', compact(['images', 'featured']));
     }
 
     /**

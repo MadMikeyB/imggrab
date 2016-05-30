@@ -28,6 +28,11 @@
     fitColumns: true,
   });
 
+  if ($.cookie('welcome') == null) {
+    $('#welcome').modal('show');
+    $.cookie('welcome', '7');
+  }
+
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
