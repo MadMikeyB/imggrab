@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+ImgGrab v3 &mdash; Return of the wallpapers
+@stop
+
 @section('content')
 	<div class="gallery">
 		<div class="placeholder" id="featured">
