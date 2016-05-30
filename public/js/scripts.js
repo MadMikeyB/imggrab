@@ -24,6 +24,8 @@
 
   $('.gallery-images').isotope({
     itemSelector: '.image img',
+    resizesContainer : false,
+    fitColumns: true,
   });
 
   if ($.cookie('welcome') == null) {
